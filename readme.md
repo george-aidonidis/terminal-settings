@@ -17,11 +17,12 @@ And a more complicated one:
 
 ## iTerm2
 - [Here][nightly] you can download iTerm2 nightly build.
+- In order to have the top bar the same color with gruvbox go to `Preferences` --> `Profiles` --> `Color` --> `Tab Color` and put **RGB (39, 39, 39**).
 ## Vundle
 - Considering that you have `vim` installed on your system, you can follow the instructions on how to download/setup vundle [here][vundle-tut].
 
 ## gruvbox theme
-- **iTerm2**: Download these files [link][gruviterm] and import them to iTerm2 (from `Preferences` --> `Profiles` --> `Color Presets` --> `Import...`)
+- **iTerm2**: Download these files [link][gruviterm] and import them to iTerm2 (from `Preferences` --> `Profiles` --> `Colors` --> `Color Presets` --> `Import...`)
 - **vim**: Place below line between `vundle` configuration inside `.vimrc` file:
 ```sh
 call vundle#begin()
