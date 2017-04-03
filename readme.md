@@ -2,17 +2,17 @@
 
 ## Table of Contents
 1. [Screenshots](#screenshots)
-2. [iTerm2](#iTerm2)
+2. [iTerm2](#iterm2)
 3. [Vundle](#vundle)
 4. [Gruvbox theme](#gruvbox-theme)
 5. [tmux](#tmux)
 6. [Vim airline](#vim-airline)
 
 ## Screenshots
-After following your terminal should look like this:
+After following this small guide your terminal should look like this:
 ![image][terminal-img]
 
-And a more complicated one:
+And a more complicated one (node app running, `vim` and `htop`):
 ![image][terminal-dev-img]
 
 ## iTerm2
@@ -22,7 +22,7 @@ And a more complicated one:
 - Considering that you have `vim` installed on your system, you can follow the instructions on how to download/setup vundle [here][vundle-tut].
 
 ## gruvbox theme
-- **iTerm2**: Download these files [link][gruviterm] and import them to iTerm2 (from `Preferences` --> `Profiles` --> `Colors` --> `Color Presets` --> `Import...`)
+- **iTerm2**: Download [these][gruviterm] files and import them to iTerm2 (from `Preferences` --> `Profiles` --> `Colors` --> `Color Presets` --> `Import...`)
 - **vim**: Place below line between `vundle` configuration inside `.vimrc` file:
 ```sh
 call vundle#begin()
@@ -36,7 +36,7 @@ and run `:PluginInstall`
 _More [here][gruv]_
 
 ## tmux
-- You can install `tmux` via `brew` on mac or use the package manager of your os. You should also install the `reattach-to-user-namespace` package to avoid problems with copy/paste when `tmux` is running.
+- You can install `tmux` via `brew` on mac or use the package manager of your os. You should also install the `reattach-to-user-namespace` package to avoid problems with copy/paste when `tmux` is running (for `mac os`).
 ```sh
 brew install `tmux`
 brew install reattach-to-user-namespace
@@ -63,6 +63,10 @@ Or you can `git clone`/download the [.vimrc](./.vimrc) file.
 - And as with any `vundle` plugin you need to run `:PluginInstall`
 
 - Afterwads you need to select the `base16` that suits the `gruvbox` vim theme (in my opinion at least) by running `:AirlineTheme base16`
+If you'd like this to be persistent add the following to your `.vimrc` file:
+```sh
+let g:airline_theme='base16'
+```
 - More about `vim airline` [here][airline] and about its themes [here][airline-themes]
 
 
