@@ -71,7 +71,7 @@ let g:airline_theme='base16'
 
 
 [nightly]: https://iTerm2.com/downloads/nightly/#/section/home
-[gruviterm]: https://github.com/morhetz/gruvbox-contrib/tree/master/iTerm2
+[gruviterm]: https://github.com/morhetz/gruvbox-contrib/tree/master/iterm2
 [vundle-tut]: https://github.com/VundleVim/Vundle.vim#quick-start
 [gruv]: https://github.com/morhetz/gruvbox
 [airline]: https://github.com/vim-airline/vim-airline#themes
