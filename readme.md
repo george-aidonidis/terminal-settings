@@ -12,7 +12,7 @@
 After following this small guide your terminal should look like this:
 ![image][terminal-img]
 
-And a more complicated one (node app running, `vim` and `htop`):
+And a more complicated one (`node` app running, `vim` and `htop`):
 ![image][terminal-dev-img]
 
 ## iTerm2
@@ -36,20 +36,20 @@ and run `:PluginInstall`
 _More [here][gruv]_
 
 ## tmux
-- You can install `tmux` via `brew` on mac or use the package manager of your os. You should also install the `reattach-to-user-namespace` package to avoid problems with copy/paste when `tmux` is running (for `mac os`).
+- You can install `tmux` via `brew` on mac or use the package manager of your os. For `mac os`, you should also install the `reattach-to-user-namespace` package to avoid problems with copy/paste when `tmux` is running.
 ```sh
 brew install `tmux`
 brew install reattach-to-user-namespace
 ```
 
-- As mentioned above, in order to avoid the copy/paste problem **make sure** you include the following line inside your `.tmux.conf`
+- As mentioned above, in order to avoid copy/paste problems, on `mac os`, **make sure** you include the following line inside your `.tmux.conf`
 ```sh
 # Fix for copy paste problem when opening an editor inside tmux
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 ```
 Or you can `git clone`/download the [.tmux.conf](./.tmux.conf)
 ## vim airline
-- `Vim airline` is used to display information in the status bar on vim. It can be installed as any plugin.
+- `Vim airline` is used to display information in the status bar on vim. It can be installed as any other plugin.
 Just place between the `vundle` configuration:
 ```sh
 call vundle#begin()
@@ -62,8 +62,8 @@ call vundle#end()
 Or you can `git clone`/download the [.vimrc](./.vimrc) file.
 - And as with any `vundle` plugin you need to run `:PluginInstall`
 
-- Afterwads you need to select the `base16` that suits the `gruvbox` vim theme (in my opinion at least) by running `:AirlineTheme base16`
-If you'd like this to be persistent add the following to your `.vimrc` file:
+- Afterwards you need to select the `base16` that suits the `gruvbox` vim theme (in my opinion at least) by running `:AirlineTheme base16`
+If you'd like this to be persistent add the following line to your `.vimrc` file:
 ```sh
 let g:airline_theme='base16'
 ```
